@@ -1,6 +1,7 @@
-import Signup from "./Signup";
-import Login from './Login'
-import Logout from './Logout'
+import SignUp from "./SignUp";
+import Login from './LogIn'
+import Logout from './LogOut'
+import PrivateText from "./PrivateText";
 import { useState } from "react";
 const User = ({ currUser, setCurrUser }) => {
     const [show, setShow] = useState(true)
@@ -17,7 +18,7 @@ const User = ({ currUser, setCurrUser }) => {
             {show ?
                 <Login setCurrUser={setCurrUser} setShow={setShow} />
                 :
-                <Signup setCurrUser={setCurrUser} setShow={setShow} />
+                <SignUp setCurrUser={setCurrUser} setShow={setShow} />
             }
         </div>
     )

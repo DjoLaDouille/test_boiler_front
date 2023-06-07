@@ -37,6 +37,7 @@ const LogIn = ({ setCurrUser, setShow }) => {
     }
     return (
         <div>
+            <h1>Salut à toi !</h1>
             <form ref={formRef} onSubmit={handleSubmit}>
                 Email: <input type="email" name='email' placeholder="email" />
                 <br />

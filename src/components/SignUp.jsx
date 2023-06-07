@@ -1,6 +1,6 @@
 import { useRef } from "react"
 
-const Signup = ({ setCurrUser, setShow }) => {
+const SignUp = ({ setCurrUser, setShow }) => {
     const formRef = useRef()
     const signup = async (userInfo, setCurrUser) => {
         const url = "http://localhost:3000/signup"
@@ -49,4 +49,4 @@ const Signup = ({ setCurrUser, setShow }) => {
         </div>
     )
 }
-export default Signup
+export default SignUp

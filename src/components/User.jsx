@@ -1,6 +1,6 @@
 import SignUp from "./SignUp";
-import Login from './LogIn'
-import Logout from './LogOut'
+import LogIn from './LogIn'
+import LogOut from './LogOut'
 import PrivateText from "./PrivateText";
 import { useState } from "react";
 const User = ({ currUser, setCurrUser }) => {
@@ -10,13 +10,13 @@ const User = ({ currUser, setCurrUser }) => {
             <div>
                 Hello {currUser.email}
                 <PrivateText currUser={currUser} />
-                <Logout setCurrUser={setCurrUser} />
+                <LogOut setCurrUser={setCurrUser} />
             </div>
         )
     return (
         <div>
             {show ?
-                <Login setCurrUser={setCurrUser} setShow={setShow} />
+                <LogIn setCurrUser={setCurrUser} setShow={setShow} />
                 :
                 <SignUp setCurrUser={setCurrUser} setShow={setShow} />
             }
